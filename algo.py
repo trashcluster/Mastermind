@@ -11,7 +11,7 @@ def fsolution (colonnes, couleurs):
 def ftest (colonnes):
     test=[]
     for i in range(colonnes):
-        test.append(int(input("Entre la valeur",i)))
+        test.append(int(input("Entre la valeur : ")))
     return test
 
 
@@ -30,7 +30,7 @@ def mm (solution, test):
                 resultat.append('b')
 #si le tableau de resultat ne fait pas la longueur désiré, complète le tableau avec 'v'
     while len(resultat)<len(solution):
-        resultat.append('v')
+        resultat.append(0)
     return resultat
 
 colonnes = int(input("entre le nombre de colonnes : "))
